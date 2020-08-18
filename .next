@@ -1,0 +1,1207 @@
+local function s(...) return sleep(...) end
+local function w(...) return write(...) end
+local function p(...) return print(...) end
+local function tw(...) return term.write(...) end
+local function scp(...) return term.setCursorPos(...) end
+local function sbc(...) return term.setBackgroundColor(...) end
+local function stc(...) return term.setTextColor(...) end
+local function tc(...) return term.clear(...) end
+local function tcl(...) return term.clearLine(...) end
+local function r(...) return shell.run(...) end
+local function sp(...) return textutils.slowPrint(...) end
+local function sw(...) return textutils.slowWrite(...) end
+local function fse(...) return fs.exists(...) end
+local function pul(...) return paintutils.loadImage(...) end
+local function pud(...) return paintutils.drawImage(...) end
+local function pfb(...) return paintutils.drawFilledBox(...) end
+local function su(...) return os.shutdown(...) end
+local function re(...) return os.reboot(...) end
+local function pdp(...) return paintutils.drawPixel(...) end
+ 
+function cus()
+scp(1,10)
+fs.delete("/os/.tapus")
+r("pastebin get 3KBhKn53 /os/.tapus")
+r("paint /os/.pulpit")
+system()
+end
+ 
+ 
+function folder()
+if fse("/nshop/") then
+if colr == "colors.orange" then pfb(1, 2, 51, 18, colors.orange) elseif colr == "colors.magenta" then pfb(1, 2, 51, 18, colors.magenta) elseif colr == "colors.lightBlue" then pfb(1, 2, 51, 18, colors.lightBlue) elseif colr == "colors.yellow" then pfb(1, 2, 51, 18, colors.yellow) elseif colr == "colors.lime" then pfb(1, 2, 51, 18, colors.lime) elseif colr == "colors.pink" then pfb(1, 2, 51, 18, colors.pink) elseif colr == "colors.gray" then pfb(1, 2, 51, 18, colors.gray) elseif colr == "colors.lightGray" then pfb(1, 2, 51, 18, colors.lightGray) elseif colr == "colors.purple" then pfb(1, 2, 51, 18, colors.purple) elseif colr == "colors.blue" then pfb(1, 2, 51, 18, colors.blue) elseif colr == "colors.brown" then pfb(1, 2, 51, 18, colors.brown) elseif colr == "colors.green" then pfb(1, 2, 51, 18, colors.green) elseif colr == "colors.red" then pfb(1, 2, 51, 18, colors.red) elseif colr == "colors.black" then pfb(1, 2, 51, 18, colors.black) stc(colors.white) elseif colr == "colors.white" then pfb(1, 2, 51, 18, colors.white) stc(colors.black)  end
+pfb(1, 2, 51, 2, colors.blue)
+stc(colors.white)
+scp(1,2)
+p("Aplikacje nextStore")
+if fs.exists("/nshop/.exp") then
+paintutils.drawFilledBox(2, 4, 2, 6, colors.orange)
+paintutils.drawFilledBox(3, 4, 3, 6, colors.yellow)
+paintutils.drawFilledBox(4, 4, 4, 6, colors.red)
+scp(2,7)
+stc(colors.white)
+if colr == "colors.orange" then sbc(colors.orange) elseif colr == "colors.magneta" then sbc(colors.magneta) elseif colr == "colors.lightBlue" then sbc(colors.lightBlue) elseif colr == "colors.yellow" then sbc(colors.yellow) elseif colr == "colors.lime" then sbc(colors.lime) elseif colr == "colors.pink" then sbc(colors.pink) elseif colr == "colors.gray" then sbc(colors.gray) elseif colr == "colors.lightGray" then sbc(colors.lightGray) elseif colr == "colors.purple" then sbc(colors.purple) elseif colr == "colors.blue" then sbc(colors.blue) elseif colr == "colors.brown" then sbc(colors.brown) elseif colr == "colors.green" then sbc(colors.green) elseif colr == "colors.red" then sbc(colors.red) elseif colr == "colors.black" then sbc(colors.black) stc(colors.white) elseif colr == "colors.white" then sbc(colors.white) stc(colors.black)  end
+p("Eksplorator")
+end
+ 
+if fs.exists("/nshop/.dg") then
+ pfb(15, 4, 15, 6, colors.gray)
+ pfb(16, 4, 16, 6, colors.gray)
+ pfb(17, 4, 17, 6, colors.lightGray)
+ pdp(16, 5, colors.lightGray)
+ pdp(17, 5, colors.gray)
+ stc(colors.white)
+if colr == "colors.orange" then sbc(colors.orange) elseif colr == "colors.magneta" then sbc(colors.magneta) elseif colr == "colors.lightBlue" then sbc(colors.lightBlue) elseif colr == "colors.yellow" then sbc(colors.yellow) elseif colr == "colors.lime" then sbc(colors.lime) elseif colr == "colors.pink" then sbc(colors.pink) elseif colr == "colors.gray" then sbc(colors.gray) elseif colr == "colors.lightGray" then sbc(colors.lightGray) elseif colr == "colors.purple" then sbc(colors.purple) elseif colr == "colors.blue" then sbc(colors.blue) elseif colr == "colors.brown" then sbc(colors.brown) elseif colr == "colors.green" then sbc(colors.green) elseif colr == "colors.red" then sbc(colors.red) elseif colr == "colors.black" then sbc(colors.black) stc(colors.white) elseif colr == "colors.white" then sbc(colors.white) stc(colors.black)  end
+ scp(15,7)
+ p("DGStatistics")
+end
+ 
+ 
+if fs.exists("/nshop/.tm") then
+ pfb(28, 4, 30, 6, colors.gray)
+ pfb(28, 4, 30, 4, colors.lightGray)
+ pdp(29,5, colors.lightGray)
+ pdp(29,6, colors.lightGray)
+  stc(colors.white)
+if colr == "colors.orange" then sbc(colors.orange) elseif colr == "colors.magneta" then sbc(colors.magneta) elseif colr == "colors.lightBlue" then sbc(colors.lightBlue) elseif colr == "colors.yellow" then sbc(colors.yellow) elseif colr == "colors.lime" then sbc(colors.lime) elseif colr == "colors.pink" then sbc(colors.pink) elseif colr == "colors.gray" then sbc(colors.gray) elseif colr == "colors.lightGray" then sbc(colors.lightGray) elseif colr == "colors.purple" then sbc(colors.purple) elseif colr == "colors.blue" then sbc(colors.blue) elseif colr == "colors.brown" then sbc(colors.brown) elseif colr == "colors.green" then sbc(colors.green) elseif colr == "colors.red" then sbc(colors.red) elseif colr == "colors.black" then sbc(colors.black) stc(colors.white) elseif colr == "colors.white" then sbc(colors.white) stc(colors.black)  end
+ scp(28,7)
+ p("TimeMachine")
+end
+ 
+if fs.exists("/nshop/.calc") then
+ pfb(2, 8, 4, 8, colors.blue)
+ pfb(2, 9, 4, 10, colors.cyan)
+ stc(colors.white)
+ if colr == "colors.orange" then sbc(colors.orange) elseif colr == "colors.magneta" then sbc(colors.magneta) elseif colr ==
+ "colors.lightBlue" then sbc(colors.lightBlue) elseif colr == "colors.yellow" then sbc(colors.yellow) elseif colr == "colors.lime" then
+ sbc(colors.lime) elseif colr == "colors.pink" then sbc(colors.pink) elseif colr == "colors.gray" then sbc(colors.gray) elseif colr ==
+ "colors.lightGray" then sbc(colors.lightGray) elseif colr == "colors.purple" then sbc(colors.purple) elseif colr == "colors.blue" then
+ sbc(colors.blue) elseif colr == "colors.brown" then sbc(colors.brown) elseif colr == "colors.green" then sbc(colors.green) elseif colr
+ == "colors.red" then sbc(colors.red) elseif colr == "colors.black" then sbc(colors.black) stc(colors.white) elseif colr ==
+ "colors.white" then sbc(colors.white) stc(colors.black)  end
+ scp(2,11)
+ p("Kalkulator")
+end
+local event, click, x, y = os.pullEvent("mouse_click")
+if x>1 and x<5 and y>3 and y<7 and fs.exists("/nshop/.exp") then r("/nshop/.exp") end
+if x>14 and x<18 and y>3 and y<7 and fs.exists("/nshop/.dg") then r("/nshop/.dg") end
+if x>27 and x<31 and y>3 and y<7 and fs.exists("/nshop/.tm") then r("/nshop/.tm") end
+if x>1 and x<5 and y>7 and y<11 and fs.exists("/nshop/.calc") then r("/nshop/.calc") end
+if x>0 and x<6 and y == 19 then start() end
+end
+end
+ 
+ 
+ 
+function tapetaust()
+local tapust = fs.open("/os/.tapus", "r")
+tapust1 = tapust.readLine(1)
+tapust.close()
+if tapust1 == "default" then
+ sbc(colors.gray)
+ stc(colors.white)
+ scp(1,9)
+ p("NextUI")
+ scp(9,9)
+ sbc(colors.lightGray)
+ p("Prosta")
+ scp(16,9)
+ p("Wlasna")
+ local event, click, x, y = os.pullEvent("mouse_click")
+ if x>8 and x<15 and y == 9 then
+  fs.delete("/os/.pulpit")
+  fs.delete("/os/.tapus")
+  r("pastebin get vwG8AryW /os/.pulpit")
+  r("pastebin get uTedutxS /os/.tapus")
+  s(1)
+  system()
+ end
+ if x>15 and x<23 and y == 9 then cus() end
+end
+if tapust1 == "custom" then
+ stc(colors.white)
+ sbc(colors.lightGray)
+ scp(1,9)
+ p("NextUI")
+ scp(9,9)
+ p("Prosta")
+ sbc(colors.gray)
+ scp(16,9)
+ p("Wlasna")
+ local event, click, x, y = os.pullEvent("mouse_click")
+ if x>8 and x<15 and y == 9 then
+  fs.delete("/os/.pulpit")
+  fs.delete("/os/.tapus")
+  r("pastebin get vwG8AryW /os/.pulpit")
+  r("pastebin get uTedutxS /os/.tapus")
+  s(1)
+  system()
+ end
+ if x>0 and x<9 and y == 9 then
+  fs.delete("/os/.pulpit")
+  fs.delete("/os/.tapus")
+  r("pastebin get KCNCwuj3 /os/.pulpit")
+  r("pastebin get DxMvUVHx /os/.tapus")
+  s(1)
+  system()
+ end
+end
+if tapust1 == "simple" then
+ sbc(colors.lightGray)
+ stc(colors.white)
+ scp(1,9)
+ p("NextUI")
+ sbc(colors.gray)
+ scp(9,9)
+ p("Prosta")
+ sbc(colors.lightGray)
+ scp(16,9)
+ p("Wlasna")
+ local event, click, x, y = os.pullEvent("mouse_click")
+ if x>0 and x<9 and y == 9 then
+  fs.delete("/os/.pulpit")
+  fs.delete("/os/.tapus")
+  r("pastebin get KCNCwuj3 /os/.pulpit")
+  r("pastebin get DxMvUVHx /os/.tapus")
+  s(1)
+  system()
+ end
+ if x>15 and x<23 and y == 9 then cus() end
+end
+end
+function cmd()
+s(1)
+tc()
+sbc(colors.black)
+tc()
+sbc(colors.black)
+stc(colors.white)
+scp(1,1)
+p("MineCore Command Prompt")
+p("2018 Microcraft")
+p("Wpisz 'help', aby uzyskac pomoc")
+while true do
+w("./minecore/>")
+comm = read()
+if comm == "help" then
+ p("'ver' - wersja MineCore")
+ p("'next' - powrot do NextUI")
+ p("'nextver' - wersja NextUI")
+ p("'run' - uruchom plik")
+ p("'log' - zmiana hasla")
+ p("'reboot' - uruchom ponownie")
+ p("'shutdown' - wylacz komputer")
+ p("'store' - sklep z aplikacjami")
+ p("'craft' - powrot do CraftOS")
+ p("'update' - aktualizuj NextUI")
+ p("'dir' - lista plikow w danym folderze")
+end
+if comm == "reboot" then re() end
+if comm == "shutdown" then su() end
+if comm == "update" then r("/os/.update") end
+if comm == "dir" then
+ w(".Podaj sciezke>")
+ dir1 = read()
+ r("dir", dir1)
+end
+if comm == "store" then sklep() end
+if comm == "ver" then
+ p("Microcraft MineCore 1.65 2020.")
+ p("Microcraft MineUI D 1.0 2018.")
+end
+if comm == "nextver" then
+ p("Microcraft NextUI 1.75 2nd UI Update 2020.")
+end
+if comm == "next" then system() end
+if comm == "run" then
+ w("Wpisz sciezke pliku: ")
+ plik = read()
+ if fs.exists(plik) then r(plik) end
+end
+if comm == "log" then
+ w("Wpisz nowe haslo: ")
+ passw = read()
+ r("rm /os/.log2")
+ local pas = fs.open("/os/.log2", "w")
+ pass = pas.writeLine(passw)
+ pas.close()
+ p("Uruchamianie ponownie...")
+ s(1)
+ re()
+end
+end
+end
+ 
+ 
+function apps()
+while true do
+sbc(colors.black)
+tc()
+sbc(colors.black)
+pfb(6, 19, 49, 19, colors.blue)
+sbc(colors.green)
+stc(colors.white)
+scp(1,19)
+if colr == "colors.orange" then sbc(colors.orange) elseif colr == "colors.magneta" then sbc(colors.magneta) elseif colr == "colors.lightBlue" then sbc(colors.lightBlue) elseif colr == "colors.yellow" then sbc(colors.yellow) elseif colr == "colors.lime" then sbc(colors.lime) elseif colr == "colors.pink" then sbc(colors.pink) elseif colr == "colors.gray" then sbc(colors.gray) elseif colr == "colors.lightGray" then sbc(colors.lightGray) elseif colr == "colors.purple" then sbc(colors.purple) elseif colr == "colors.blue" then sbc(colors.blue) elseif colr == "colors.brown" then sbc(colors.brown) elseif colr == "colors.green" then sbc(colors.green) elseif colr == "colors.red" then sbc(colors.red) elseif colr == "colors.black" then sbc(colors.black) stc(colors.white) elseif colr == "colors.white" then sbc(colors.white) stc(colors.black)  end
+w("Start")
+pfb(1, 1, 51, 1, colors.blue)
+pdp(51, 1, colors.red)
+pdp(50, 19, colors.red)
+pdp(51, 19, colors.orange)
+scp(1,1)
+sbc(colors.blue)
+stc(colors.white)
+p("Zarzadzanie aplikacjami")
+pfb(3, 3, 5, 3, colors.gray)
+pdp(3, 3, colors.lightGray)
+scp(6,3)
+stc(colors.white)
+sbc(colors.black)
+miejsce = math.ceil(fs.getFreeSpace("/")/1024)
+p("Dysk twardy   Wolne miejsce: ", miejsce, "KB")
+scp(1,6)
+p("Aplikacje:")
+scp(6,8)
+stc(colors.white)
+sbc(colors.black)
+if fs.exists("/nshop/") then rozmiar = math.ceil(getSize("/nshop/")/1024) else
+scp(1,7) sbc(colors.black) stc(colors.white) p("Brak zainstalowanych aplikacji") end
+scp(1,5)
+p("Laczny rozmiar aplikacji na dysku: ", rozmiar, "KB")
+if fs.exists("/nshop/.exp") then pfb(3, 8, 5, 8, colors.blue) scp(6,8) stc(colors.white) sbc(colors.black) p("Eksplorator") scp(1,8) stc(colors.white) sbc(colors.red) p("X") end
+if fs.exists("/nshop/.dg") then pfb(3, 10, 5, 10, colors.gray) scp(6,10) stc(colors.white) sbc(colors.black) p("DGStatistics") scp(1,10) stc(colors.white) sbc(colors.red) p("X") end
+if fs.exists("/nshop/.tm") then pfb(3, 12, 5, 12, colors.green) scp(6,12) stc(colors.white) sbc(colors.black) p("TimeMachine") scp(1,12) stc(colors.white) sbc(colors.red) p("X") end
+if fs.exists("/nshop/.calc") then pfb(3, 14, 5, 14, colors.cyan) scp(6,14) stc(colors.white) sbc(colors.black) p("Kalkulator") scp(1, 14) stc(colors.white) sbc(colors.red) p("X") end
+local event, click, x, y = os.pullEvent("mouse_click")
+if x>0 and x<6 and y == 19 then start() end
+if x == 1 and y == 8 then fs.delete("/nshop/.exp") s(1)  end
+if x == 1 and y == 10 then fs.delete("/nshop/.dg") s(1)  end
+if x == 1 and y == 12 then fs.delete("/nshop/.tm") s(1)  end
+if x == 1 and y == 14 then fs.delete("/nshop/.calc") s(1) end
+if x == 51 and y == 1 then nust() end
+end
+end
+ 
+ 
+function pol()
+pfb(50, 13, 50, 18, colors.white)
+pfb(51, 13, 51, 18, colors.red)
+end
+ 
+function calc()
+scp(16,2)
+sbc(colors.white)
+stc(colors.black)
+p("Kalkulator NextUI to prosta")
+scp(16,3)
+p("aplikacja pozwalajaca na")
+scp(16,4)
+p("wykonywanie dzialan matematycznych")
+scp(16,5)
+p("Wyprobuj juz dzis!")
+pfb(16, 19, 51, 19, colors.green)
+if fs.exists("/nshop/.calc") then
+ scp(16,19)
+ sbc(colors.green)
+ stc(colors.white)
+ w("Usun      Uruchom")
+ local event, click, x, y = os.pullEvent("mouse_click")
+ if x>15 and x<21 and y == 19 then fs.delete("/nshop/.calc") end
+ if x>25 and x<34 and y == 19 then r("/nshop/.calc") end
+else
+ scp(30,19)
+ w("Pobierz")
+ local event, click, x, y = os.pullEvent("mouse_click")
+ if x>29 and x<40 then
+  if pass == "" then r("pastebin get dMjjSaKY /nshop/.calc")
+  else
+  pfb(10, 5, 30, 9, colors.blue)
+  scp(10,5) stc(colors.white)
+  p("Wymagana autoryzacja.")
+  scp(10,6)
+  p("Wpisz haslo:")
+  scp(10,7)
+  w("")
+  haslo = read()
+  if haslo == pass then r("pastebin get dMjjSaKY /nshop/.calc")
+  end  
+  end
+  end
+end
+end
+ 
+function ep()
+scp(16,2)
+sbc(colors.white)
+stc(colors.black)
+p("Eksplorator dla NextUI to potezne")
+scp(16,3)
+p("a zarazem proste narzedzie do")
+scp(16,4)
+p("przegladania zawartosci dysku")
+scp(16,5)
+p("twardego. Pobierz za darmo dzisiaj!")
+pfb(16, 19, 51, 19, colors.green)
+if fs.exists("/nshop/.exp") then
+ scp(16,19)
+ sbc(colors.green)
+ stc(colors.white)
+ w("Usun      Uruchom")
+ local event, click, x, y = os.pullEvent("mouse_click")
+ if x>15 and x<21 and y == 19 then fs.delete("/nshop/.exp") end
+ if x>25 and x<34 and y == 19 then r("/nshop/.exp") end
+else
+ scp(30,19)
+ w("Pobierz")
+ local event, click, x, y = os.pullEvent("mouse_click")
+ if x>29 and x<40 then
+  if pass == "" then r("pastebin get zbzF7Zu4 /nshop/.exp")
+  else
+  pfb(10, 5, 30, 9, colors.blue)
+  scp(10,5) stc(colors.white)
+  p("Wymagana autoryzacja.")
+  scp(10,6)
+  p("Wpisz haslo:")
+  scp(10,7)
+  w("")
+  haslo = read()
+  if haslo == pass then r("pastebin get zbzF7Zu4 /nshop/.exp")
+  end  
+  end
+  end
+end
+end
+ 
+ 
+function rc()
+scp(16,2)
+sbc(colors.white)
+stc(colors.black)
+p("ReactorControl to aplikacja,")
+scp(16,3)
+p("stworzona dla latwiejszej")
+scp(16,4)
+p("kontroli reaktorow z modyfikacji")
+scp(16,5)
+p("do Minecraft nazwanej BigReactors.")
+scp(16,6)
+p("Pobierz juz dzis!")
+pfb(16, 19, 51, 19, colors.green)
+scp(16,19)
+w("Aplikacja nie jest jeszcze dostepna")
+local event, click, x, y = os.pullEvent("mouse_click")
+end
+ 
+ 
+function tm()
+scp(16,2)
+sbc(colors.white)
+stc(colors.black)
+p("TimeMashine to aplikacja")
+scp(16,3)
+p("uruchamiajaca starsze wersje")
+scp(16,4)
+p("MineCore oraz Minedows dzieki")
+scp(16,5)
+p("NextUI API! Poznaj starsze")
+scp(16,6)
+p("systemy Microcraft bez zbednego")
+scp(16,7)
+p("zajmowania miejsca na dysku!")
+scp(16,8)
+p("Aplikacja stworzona na rocznice")
+scp(16,9)
+p("wydania MineCore 1.0!")
+pfb(16, 19, 51, 19, colors.green)
+if fs.exists("/nshop/.tm") then
+ scp(16,19)
+ sbc(colors.green)
+ stc(colors.white)
+ w("Usun      Uruchom")
+ local event, click, x, y = os.pullEvent("mouse_click")
+ if x>15 and x<21 and y == 19 then fs.delete("/nshop/.tm") end
+ if x>25 and x<34 and y == 19 then r("/nshop/.tm") end
+else
+ scp(30,19)
+ w("Pobierz")
+ local event, click, x, y = os.pullEvent("mouse_click")
+ if x>29 and x<40 then
+  if pass == "" then r("pastebin get kCQLpZQS /nshop/.tm")
+  else
+  pfb(10, 5, 30, 9, colors.blue)
+  scp(10,5) stc(colors.white)
+  p("Wymagana autoryzacja.")
+  scp(10,6)
+  p("Wpisz haslo:")
+  scp(10,7)
+  w("")
+  haslo = read()
+  if haslo == pass then r("pastebin get kCQLpZQS /nshop/.tm")
+  end  
+  end
+  end
+end
+end
+ 
+function next18()
+scp(16,2)
+sbc(colors.white)
+stc(colors.black)
+p("Aplikacja, ktora aktualizuje")
+scp(16,3)
+p("NextUI 1.75 do wersji 1.8")
+scp(16,4)
+p("Developers Update.")
+scp(16,5)
+p("Nie jest wymagane pobranie")
+scp(16,6)
+p("aplikacji do aktualizacji OS")
+pfb(16, 19, 51, 19, colors.green)
+stc(colors.white)
+scp(30,19)
+write("Uruchom")
+local event, click, x, y = os.pullEvent("mouse_click")
+if x>29 and x<40 then r("pastebin run 5nS7byXX") end
+end
+ 
+function dg()
+scp(16,2)
+sbc(colors.white)
+stc(colors.black)
+p("DGStatistics to aplikacja,")
+scp(16,3)
+p("stworzona we wspolpracy z ")
+scp(16,4)
+p("serwerem Darkness Grounds ")
+scp(16,5)
+p("pokazujaca statystyki broni")
+scp(16,6)
+p("Z ich autorskiej modyfikacji!")
+scp(16,7)
+p("Pobierz juz dzis!")
+pfb(16, 19, 51, 19, colors.green)
+scp(16,19)
+if fs.exists("/nshop/.dg") then
+ scp(16,19)
+ sbc(colors.green)
+ stc(colors.white)
+ w("Usun      Uruchom")
+ local event, click, x, y = os.pullEvent("mouse_click")
+ if x>15 and x<21 and y == 19 then fs.delete("/nshop/.dg") end
+ if x>25 and x<34 and y == 19 then r("/nshop/.dg") end
+else
+ scp(30,19)
+ w("Pobierz")
+ local event, click, x, y = os.pullEvent("mouse_click")
+ if x>29 and x<40 then
+  if pass == "" then r("pastebin get qRNinxW4 /nshop/.dg")
+  else
+  pfb(10, 5, 30, 9, colors.blue)
+  scp(10,5) stc(colors.white)
+  p("Wymagana autoryzacja.")
+  scp(10,6)
+  p("Wpisz haslo:")
+  scp(10,7)
+  w("")
+  haslo = read()
+  if haslo == pass then r("pastebin get qRNinxW4 /nshop/.dg")
+  end  
+  end
+  end
+end
+end
+ 
+ 
+function sklep()
+while true do
+sbc(colors.white)
+tc()
+sbc(colors.white)
+pfb(1, 1, 51, 1, colors.green)
+pfb(15, 1, 15, 19, colors.green)
+pdp(51, 1, colors.red)
+scp(1,1)
+sbc(colors.green)
+stc(colors.white)
+p("nextStore")
+sbc(colors.white)
+stc(colors.black)
+p("Eksplorator")
+p("DGStatistics")
+p("ReactorControl")
+p("TimeMashine")
+p("Kalkulator")
+p("NextUI 1.8")
+scp(1,18)
+p("Wolne miejsce:")
+miejsce = math.ceil(fs.getFreeSpace("/")/1024)
+w(fs.getFreeSpace("/")/1024, "KB")
+shell.exit()
+local event, click, x, y = os.pullEvent("mouse_click")
+if x>0 and x<16 and y == 2 then ep() end
+if x>0 and x<16 and y == 3 then dg() end
+if x>0 and x<16 and y == 4 then rc() end
+if x>0 and x<16 and y == 5 then tm() end
+if x>0 and x<16 and y == 6 then calc() end
+if x>0 and x<16 and y == 7 then next18() end
+if x == 51 and y == 1 then system() end
+end
+end
+ 
+ 
+function shop()
+pfb(41, 17, 51, 18, colors.black)
+stc(colors.white)
+scp(41,17)
+p("Sklep")
+scp(41,18)
+p("Wyczysc")
+local event, click, x, y = os.pullEvent("mouse_click")
+if x>40 and x<52 and y == 17 then sklep() end
+if x>40 and x<52 and y == 18 then fs.delete("/nshop/") end
+end
+ 
+ 
+function dysk()
+while true do
+if colr == "colors.orange" then sbc(colors.orange) elseif colr == "colors.magneta" then sbc(colors.magneta) elseif colr == "colors.lightBlue" then sbc(colors.lightBlue) elseif colr == "colors.yellow" then sbc(colors.yellow) elseif colr == "colors.lime" then sbc(colors.lime) elseif colr == "colors.pink" then sbc(colors.pink) elseif colr == "colors.gray" then sbc(colors.gray) elseif colr == "colors.lightGray" then sbc(colors.lightGray) elseif colr == "colors.purple" then sbc(colors.purple) elseif colr == "colors.blue" then sbc(colors.blue) elseif colr == "colors.brown" then sbc(colors.brown) elseif colr == "colors.green" then sbc(colors.green) elseif colr == "colors.red" then sbc(colors.red) elseif colr == "colors.black" then sbc(colors.black) stc(colors.white) elseif colr == "colors.white" then sbc(colors.white) stc(colors.black)  end
+scp(13,4)
+p("Kiedy w stacji bedzie ")
+scp(13,5)
+p("kompatybilna dyskietka")
+scp(13,6)
+p("nacisnij OK           ")
+scp(13,7)
+p("[OK]                  ")
+local event, click, x, y = os.pullEvent("mouse_click")
+if x>12 and x<17 and y == 7 and fs.exists("/disk/.nsetup") then r("/disk/.nsetup")
+elseif x>12 and x<17 and y == 7 and not fs.exists("/disk/.nsetup") then scp(13,8) stc(colors.white) sbc(colors.red) p("Blad! Nie znaleziono instalatora") s(2) system()
+else s(1) system()
+end
+end
+end
+ 
+function pierwszeu2()
+if fs.exists("/os/.log1") and fs.exists("/os/.log2") and fs.exists("/os/.tapus") then logo()
+else
+while true do
+tc()
+sbc(colors.white)
+tc()
+sbc(colors.white)
+stc(colors.black)
+scp(1,1)
+p("Konfiguracja NextUI      Krok 2/2")
+p("Witamy w NextUI!")
+p("Wybierz tapete Twojego pulpitu NextUI.")
+p("NextUI | Prosta")
+local event, click, x, y = os.pullEvent("mouse_click")
+if x>0 and x<8 and y == 4 then
+  fs.delete("/os/.pulpit")
+  fs.delete("/os/.tapus")
+  r("pastebin get KCNCwuj3 /os/.pulpit")
+  r("pastebin get DxMvUVHx /os/.tapus")
+  p("Konfiguracja NextUI zostala zakonczona.")
+  s(1)
+  system()
+end
+if x>8 and x<16 and y == 5 then
+  fs.delete("/os/.pulpit")
+  fs.delete("/os/.tapus")
+  r("pastebin get vwG8AryW /os/.pulpit")
+  r("pastebin get uTedutxS /os/.tapus")
+  p("Konfiguracja NextUI zostala zakonczona.")
+  s(1)
+  system()
+end
+end
+end
+end
+ 
+ 
+function pierwszeu()
+if fs.exists("/os/.log1") and fs.exists("/os/.log2") then pierwszeu2()
+else
+tc()
+sbc(colors.white)
+tc()
+sbc(colors.white)
+stc(colors.black)
+scp(1,1)
+p("Konfiguracja NextUI      Krok 1/2")
+p("Witamy w NextUI!")
+p("Wpisz nazwe uzytkownika:")
+w("")
+uzytkownik = read()
+p("Wpisz haslo: ")
+w("")
+haslo = read()
+local p = fs.open("/os/.log1", "w")
+p.write(uzytkownik)
+p.close()
+local h = fs.open("/os/.log2", "w")
+h.writeLine(haslo)
+h.close()
+print("Ponowne uruchamianie....")
+sleep(1)
+os.reboot()
+end
+end
+ 
+ 
+function logobraz()
+pfb(1, 1, 51, 5, colors.blue)
+pfb(1, 6, 51, 14, colors.lightBlue)
+pfb(1, 15, 51, 19, colors.blue)
+pfb(15, 7, 17, 9, colors.gray)
+scp(1,1)
+p("Logowanie NextUI")
+scp(1,2)
+p("Prosze wpisac dwukrotnie haslo.")
+end
+ 
+ 
+function pliki()
+ local u = fs.open("/os/.log1", "r")
+ user = u.readLine(1)
+ u.close()
+ local h = fs.open("/os/.log2", "r")
+ pass = h.readLine(1)
+ h.close()
+end
+ 
+ 
+function log()
+if pass == "" then system() else
+sbc(colors.lightBlue)
+stc(colors.white)
+scp(18,7)
+p(user)
+scp(18,8)
+w("")
+haslo = read()
+if haslo == pass then ok = 1 else scp(18,9) stc(colors.red) p("Bledne haslo") s(2) re() end
+end
+end
+ 
+ 
+function logo()
+logobraz()
+pliki()
+log()
+end
+ 
+ 
+function kolor()
+local col = fs.open("/os/.kol", "r")
+colr = col.readLine(1)
+col.close()
+end
+ 
+ 
+function kolorw()
+scp(1,5)
+if colr == "colors.orange" then sbc(colors.orange) elseif colr == "colors.magneta" then sbc(colors.magneta) elseif colr == "colors.lightBlue" then sbc(colors.lightBlue) elseif colr == "colors.yellow" then sbc(colors.yellow) elseif colr == "colors.lime" then sbc(colors.lime) elseif colr == "colors.pink" then sbc(colors.pink) elseif colr == "colors.gray" then sbc(colors.gray) elseif colr == "colors.lightGray" then sbc(colors.lightGray) elseif colr == "colors.purple" then sbc(colors.purple) elseif colr == "colors.blue" then sbc(colors.blue) elseif colr == "colors.brown" then sbc(colors.brown) elseif colr == "colors.green" then sbc(colors.green) elseif colr == "colors.red" then sbc(colors.red) elseif colr == "colors.black" then sbc(colors.black) stc(colors.white) elseif colr == "colors.white" then sbc(colors.white) stc(colors.black) end
+p("Obecny kolor wiodacy: ", colr)
+p("Wybierz nowy kolor wiodacy:")
+pdp(1, 7, colors.orange)
+pdp(2, 7, colors.lightBlue)
+pdp(3, 7, colors.yellow)
+pdp(4, 7, colors.lime)
+pdp(5, 7, colors.pink)
+pdp(6, 7, colors.gray)
+pdp(7, 7, colors.lightGray)
+pdp(8, 7, colors.purple)
+pdp(9, 7, colors.blue)
+pdp(10, 7, colors.brown)
+pdp(11, 7, colors.green)
+pdp(12, 7, colors.red)
+pdp(13, 7, colors.black)
+pdp(14, 7, colors.white)
+local event, click, x, y = os.pullEvent("mouse_click")
+if x == 1 and y == 7 then r("rm /os/.kol") local colw = fs.open("/os/.kol", "w") colw.writeLine("colors.orange") colw.close() end
+if x == 2 and y == 7 then r("rm /os/.kol") local colw = fs.open("/os/.kol", "w") colw.writeLine("colors.lightBlue") colw.close() end
+if x == 3 and y == 7 then r("rm /os/.kol") local colw = fs.open("/os/.kol", "w") colw.writeLine("colors.yellow") colw.close() end
+if x == 4 and y == 7 then r("rm /os/.kol") local colw = fs.open("/os/.kol", "w") colw.writeLine("colors.lime") colw.close() end
+if x == 5 and y == 7 then r("rm /os/.kol") local colw = fs.open("/os/.kol", "w") colw.writeLine("colors.pink") colw.close() end
+if x == 6 and y == 7 then r("rm /os/.kol") local colw = fs.open("/os/.kol", "w") colw.writeLine("colors.gray") colw.close() end
+if x == 7 and y == 7 then r("rm /os/.kol") local colw = fs.open("/os/.kol", "w") colw.writeLine("colors.lightGray") colw.close() end
+if x == 8 and y == 7 then r("rm /os/.kol") local colw = fs.open("/os/.kol", "w") colw.writeLine("colors.purple") colw.close() end
+if x == 9 and y == 7 then r("rm /os/.kol") local colw = fs.open("/os/.kol", "w") colw.writeLine("colors.blue") colw.close() end
+if x == 10 and y == 7 then r("rm /os/.kol") local colw = fs.open("/os/.kol", "w") colw.writeLine("colors.brown") colw.close() end
+if x == 11 and y == 7 then r("rm /os/.kol") local colw = fs.open("/os/.kol", "w") colw.writeLine("colors.green") colw.close() end
+if x == 12 and y == 7 then r("rm /os/.kol") local colw = fs.open("/os/.kol", "w") colw.writeLine("colors.red") colw.close() end
+if x == 13 and y == 7 then r("rm /os/.kol") local colw = fs.open("/os/.kol", "w") colw.writeLine("colors.black") colw.close() end
+if x == 14 and y == 7 then r("rm /os/.kol") local colw = fs.open("/os/.kol", "w") colw.writeLine("colors.white") colw.close() end
+end
+ 
+ 
+function getSize(path)
+  local size = 0
+  for _, file in ipairs(fs.list(path)) do
+    if fs.isDir(fs.combine(path, file)) then
+      size = size + getSize(fs.combine(path, file))
+    else
+      size = size + fs.getSize(fs.combine(path, file))
+    end
+  end
+  return size
+end
+ 
+ 
+local wer = fs.open("/os/.ver", "r")
+ver = wer.readLine(1)
+wer.close()
+ 
+ 
+function ust()
+while true do
+kolor()
+tc()
+if colr == "colors.orange" then sbc(colors.orange) elseif colr == "colors.magneta" then sbc(colors.magneta) elseif colr == "colors.lightBlue" then sbc(colors.lightBlue) elseif colr == "colors.yellow" then sbc(colors.yellow) elseif colr == "colors.lime" then sbc(colors.lime) elseif colr == "colors.pink" then sbc(colors.pink) elseif colr == "colors.gray" then sbc(colors.gray) elseif colr == "colors.lightGray" then sbc(colors.lightGray) elseif colr == "colors.purple" then sbc(colors.purple) elseif colr == "colors.blue" then sbc(colors.blue) elseif colr == "colors.brown" then sbc(colors.brown) elseif colr == "colors.green" then sbc(colors.green) elseif colr == "colors.red" then sbc(colors.red) elseif colr == "colors.black" then sbc(colors.black) stc(colors.white) elseif colr == "colors.white" then sbc(colors.white) stc(colors.black) end
+tc()
+if colr == "colors.orange" then sbc(colors.orange) elseif colr == "colors.magneta" then sbc(colors.magneta) elseif colr == "colors.lightBlue" then sbc(colors.lightBlue) elseif colr == "colors.yellow" then sbc(colors.yellow) elseif colr == "colors.lime" then sbc(colors.lime) elseif colr == "colors.pink" then sbc(colors.pink) elseif colr == "colors.gray" then sbc(colors.gray) elseif colr == "colors.lightGray" then sbc(colors.lightGray) elseif colr == "colors.purple" then sbc(colors.purple) elseif colr == "colors.blue" then sbc(colors.blue) elseif colr == "colors.brown" then sbc(colors.brown) elseif colr == "colors.green" then sbc(colors.green) elseif colr == "colors.red" then sbc(colors.red) elseif colr == "colors.black" then sbc(colors.black) stc(colors.white) elseif colr == "colors.white" then sbc(colors.white) stc(colors.black) end
+pfb(1, 1, 50, 1, colors.blue)
+pdp(51, 1, colors.red)
+pol()
+sbc(colors.blue)
+stc(colors.white)
+scp(1,1)
+p("Ustawienia")
+stc(colors.black)
+scp(1,2)
+if colr == "colors.orange" then sbc(colors.orange) elseif colr == "colors.magneta" then sbc(colors.magneta) elseif colr == "colors.lightBlue" then sbc(colors.lightBlue) elseif colr == "colors.yellow" then sbc(colors.yellow) elseif colr == "colors.lime" then sbc(colors.lime) elseif colr == "colors.pink" then sbc(colors.pink) elseif colr == "colors.gray" then sbc(colors.gray) elseif colr == "colors.lightGray" then sbc(colors.lightGray) elseif colr == "colors.purple" then sbc(colors.purple) elseif colr == "colors.blue" then sbc(colors.blue) elseif colr == "colors.brown" then sbc(colors.brown) elseif colr == "colors.green" then sbc(colors.green) elseif colr == "colors.red" then sbc(colors.red) elseif colr == "colors.black" then sbc(colors.black) stc(colors.white) elseif colr == "colors.white" then sbc(colors.white) stc(colors.black) end
+p("Informacje i ustawienia | Biurko")
+local event, click, x, y = os.pullEvent("mouse_click")
+if x == 51 and y == 1 then system() end
+if x>0 and x<20 and y == 1 then tryb = 4 end
+if x>0 and x<25 and y == 2 then tryb = 1 end
+if x>24 and x<33 and y == 2 then tryb = 3 end
+scp(1,3)
+if tryb == 1 then
+ scp(1,3)
+if colr == "colors.orange" then sbc(colors.orange) elseif colr == "colors.magneta" then sbc(colors.magneta) elseif colr == "colors.lightBlue" then sbc(colors.lightBlue) elseif colr == "colors.yellow" then sbc(colors.yellow) elseif colr == "colors.lime" then sbc(colors.lime) elseif colr == "colors.pink" then sbc(colors.pink) elseif colr == "colors.gray" then sbc(colors.gray) elseif colr == "colors.lightGray" then sbc(colors.lightGray) elseif colr == "colors.purple" then sbc(colors.purple) elseif colr == "colors.blue" then sbc(colors.blue) elseif colr == "colors.brown" then sbc(colors.brown) elseif colr == "colors.green" then sbc(colors.green) elseif colr == "colors.red" then sbc(colors.red) elseif colr == "colors.black" then sbc(colors.black) stc(colors.white) elseif colr == "colors.white" then sbc(colors.white) stc(colors.black) end
+ p("MineCore Hybrid OS NextUI")
+ p("Wersja systemu: 1.7 2nd UI Update")
+ zajete = math.ceil(getSize("/")/1024)
+ wolne = math.ceil(fs.getFreeSpace("/")/1024)
+ p("Wolne miejsce na dysku:", wolne, "KB")
+ print(zajete, "KB uzyte")
+ p("[Aktualizacja systemu]")
+ p("Jezyk systemu: ", "polski")
+ p("Dostepny jezyk: ", "angielski / English")
+ p("Zmien jezyk")
+ p("Wiersz polecen")
+ p("Logowanie wlaczone: ")
+ if pass == "" then print("Nie") else print("Tak") end
+ p("Obecna nazwa komputera: ", os.getComputerLabel())
+ p("Zmien nazwe komptutera")
+ local event, click, x, y = os.pullEvent("mouse_click")
+ if x>0 and x<20 and y == 7 then r("/os/.update") end
+ if x>0 and x<20 and y == 10 then r("pastebin run JQvW06m6") end
+ if x>0 and x<20 and y == 11 then cmd() end
+ if x>0 and x<20 and y == 15 then
+  scp(1,16)
+  w("Wpisz nowa nazwe: ")
+  nazwa = read()
+  os.setComputerLabel(nazwa)
+  end
+end
+if tryb == 3 then
+if colr == "colors.orange" then sbc(colors.orange) elseif colr == "colors.magneta" then sbc(colors.magneta) elseif colr == "colors.lightBlue" then sbc(colors.lightBlue) elseif colr == "colors.yellow" then sbc(colors.yellow) elseif colr == "colors.lime" then sbc(colors.lime) elseif colr == "colors.pink" then sbc(colors.pink) elseif colr == "colors.gray" then sbc(colors.gray) elseif colr == "colors.lightGray" then sbc(colors.lightGray) elseif colr == "colors.purple" then sbc(colors.purple) elseif colr == "colors.blue" then sbc(colors.blue) elseif colr == "colors.brown" then sbc(colors.brown) elseif colr == "colors.green" then sbc(colors.green) elseif colr == "colors.red" then sbc(colors.red) elseif colr == "colors.black" then sbc(colors.black) stc(colors.white) elseif colr == "colors.white" then sbc(colors.white) stc(colors.black) end
+ scp(1,3)
+ p("Styl graficzny: Domyslny NextUI")
+ p("Brak dostepnych stylow")
+ p("Wybierz kolor wiodacy")
+ scp(1,8)
+ p("Ustawienia tapety")
+ local event, click, x, y = os.pullEvent("mouse_click")
+ if x>0 and x<25 and y == 5 then kolorw() end
+ if x>0 and x<25 and y == 8 then tapetaust() end
+end
+if tryb == 4 then
+ pfb(1,2,15,3, colors.gray)
+ stc(colors.white)
+ scp(1,2)
+ p("Ustawienia NextUI")
+ p("2019 Microcraft")
+ local event, click, x, y = os.pullEvent("mouse_click")
+end
+end
+end
+ 
+ 
+function ikony()
+tc()
+if colr == "colors.orange" then sbc(colors.orange) elseif colr == "colors.magneta" then sbc(colors.magneta) elseif colr == "colors.lightBlue" then sbc(colors.lightBlue) elseif colr == "colors.yellow" then sbc(colors.yellow) elseif colr == "colors.lime" then sbc(colors.green) elseif colr == "colors.pink" then sbc(colors.pink) elseif colr == "colors.gray" then sbc(colors.gray) elseif colr == "colors.lightGray" then sbc(colors.lightGray) elseif colr == "colors.purple" then sbc(colors.purple) elseif colr == "colors.blue" then sbc(colors.blue) elseif colr == "colors.brown" then sbc(colors.brown) elseif colr == "colors.green" then sbc(colors.green) elseif colr == "colors.red" then sbc(colors.white) elseif colr == "colors.black" then sbc(colors.black) elseif colr == "colors.white" then sbc(colors.white) stc(colors.black) end
+tc()
+if colr == "colors.orange" then sbc(colors.orange) elseif colr == "colors.magneta" then sbc(colors.magneta) elseif colr == "colors.lightBlue" then sbc(colors.lightBlue) elseif colr == "colors.yellow" then sbc(colors.yellow) elseif colr == "colors.lime" then sbc(colors.green) elseif colr == "colors.pink" then sbc(colors.pink) elseif colr == "colors.gray" then sbc(colors.gray) elseif colr == "colors.lightGray" then sbc(colors.lightGray) elseif colr == "colors.purple" then sbc(colors.purple) elseif colr == "colors.blue" then sbc(colors.blue) elseif colr == "colors.brown" then sbc(colors.brown) elseif colr == "colors.green" then sbc(colors.green) elseif colr == "colors.red" then sbc(colors.white) elseif colr == "colors.black" then sbc(colors.black) elseif colr == "colors.white" then sbc(colors.white) stc(colors.black) end
+stc(colors.white)
+pfb(1, 1, 51, 1, colors.gray)
+pdp(51, 1, colors.red)
+sbc(colors.gray)
+scp(1,1)
+p("Tworzenie ikon NextUI")
+scp(1,2)
+stc(colors.white)
+if colr == "colors.orange" then sbc(colors.orange) elseif colr == "colors.magneta" then sbc(colors.magneta) elseif colr == "colors.lightBlue" then sbc(colors.lightBlue) elseif colr == "colors.yellow" then sbc(colors.yellow) elseif colr == "colors.lime" then sbc(colors.lime) elseif colr == "colors.pink" then sbc(colors.pink) elseif colr == "colors.gray" then sbc(colors.gray) elseif colr == "colors.lightGray" then sbc(colors.lightGray) elseif colr == "colors.purple" then sbc(colors.purple) elseif colr == "colors.blue" then sbc(colors.blue) elseif colr == "colors.brown" then sbc(colors.brown) elseif colr == "colors.green" then sbc(colors.green) elseif colr == "colors.red" then sbc(colors.red) elseif colr == "colors.black" then sbc(colors.black) elseif colr == "colors.white" then sbc(colors.white) stc(colors.black) end
+p("Witamy w kreatorze ikon. Wybierz miejsce na ikone:")
+if fs.exists("/os/iko/.ico1") then iko1 = "Zajete" else iko1 = "Wolne" end
+if fs.exists("/os/iko/.ico2") then iko2 = "Zajete" else iko2 = "Wolne" end
+if fs.exists("/os/iko/.ico3") then iko3 = "Zajete" else iko3 = "Wolne" end
+if fs.exists("/os/iko/.ico4") then iko4 = "Zajete" else iko4 = "Wolne" end
+if fs.exists("/os/iko/.ico5") then iko5 = "Zajete" else iko5 = "Wolne" end
+if fs.exists("/os/iko/.ico6") then iko6 = "Zajete" else iko6 = "Wolne" end
+if fs.exists("/os/iko/.ico7") then iko7 = "Zajete" else iko7 = "Wolne" end
+if fs.exists("/os/iko/.ico8") then iko8 = "Zajete" else iko8 = "Wolne" end
+if iko1 == "Wolne" then pfb(1, 7, 2, 8, colors.lime) else pfb(1, 7, 2, 8, colors.red) end
+if iko2 == "Wolne" then pfb(4, 7, 5, 8, colors.lime) else pfb(4, 7, 5, 8, colors.red) end
+if iko3 == "Wolne" then pfb(7, 7, 8, 8, colors.lime) else pfb(7, 7, 8, 8, colors.red) end
+if iko4 == "Wolne" then pfb(10, 7, 11, 8, colors.lime) else pfb(10, 7, 11, 8, colors.red) end
+if iko5 == "Wolne" then pfb(13, 7, 14, 8, colors.lime) else pfb(13, 7, 14, 8, colors.red) end
+if iko6 == "Wolne" then pfb(16, 7, 17, 8, colors.lime) else pfb(16, 7, 17, 8, colors.red) end
+if iko7 == "Wolne" then pfb(19, 7, 20, 8, colors.lime) else pfb(19, 7, 20, 8, colors.red) end
+if iko8 == "Wolne" then pfb(22, 7, 23, 8, colors.lime) else pfb(22, 7, 23, 8, colors.red) end
+local event, click, x, y = os.pullEvent("mouse_click")
+if x == 51 and y == 1 then system() end
+if x>0 and x<3 and y>6 and y<9 and iko1 == "Zajete" then
+ r("rm /os/iko/.ico1")
+ ikony()
+end
+if x>3 and x<6 and y>6 and y<9 and iko2 == "Zajete" then
+ r("rm /os/iko/.ico2")
+ ikony()
+end
+if x>6 and x<9 and y>6 and y<9 and iko3 == "Zajete" then
+ r("rm /os/iko/.ico3")
+ ikony()
+end
+if x>9 and x<12 and y>6 and y<9 and iko4 == "Zajete" then
+ r("rm /os/iko/.ico4")
+ ikony()
+end
+if x>12 and x<15 and y>6 and y<9 and iko5 == "Zajete" then
+ r("rm /os/iko/.ico5")
+ ikony()
+end
+if x>15 and x<18 and y>6 and y<9 and iko6 == "Zajete" then
+ r("rm /os/iko/.ico6")
+ ikony()
+end
+if x>18 and x<21 and y>6 and y<9 and iko7 == "Zajete" then
+ r("rm /os/iko/.ico7")
+ ikony()
+end
+if x>21 and x<24 and y>6 and y<9 and iko8 == "Zajete" then
+ r("rm /os/iko/.ico8")
+ ikony()
+end
+scp(1,10)
+if colr == "colors.orange" then sbc(colors.orange) elseif colr == "colors.magneta" then sbc(colors.magneta) elseif colr == "colors.lightBlue" then sbc(colors.lightBlue) elseif colr == "colors.yellow" then sbc(colors.yellow) elseif colr == "colors.lime" then sbc(colors.lime) elseif colr == "colors.pink" then sbc(colors.pink) elseif colr == "colors.gray" then sbc(colors.gray) elseif colr == "colors.lightGray" then sbc(colors.lightGray) elseif colr == "colors.purple" then sbc(colors.purple) elseif colr == "colors.blue" then sbc(colors.blue) elseif colr == "colors.brown" then sbc(colors.brown) elseif colr == "colors.green" then sbc(colors.green) elseif colr == "colors.red" then sbc(colors.red) elseif colr == "colors.black" then sbc(colors.black) elseif colr == "colors.white" then sbc(colors.white) stc(colors.black) end
+w("Wpisz sciezkie do pliku: ")
+sciezka = read()
+if x>0 and x<3 and y>6 and y<9 and iko1 == "Wolne" then
+ local ikon1 = fs.open("/os/iko/.ico1", "w")
+ ikon1.writeLine(sciezka)
+ ikon1.close()
+end
+if x>3 and x<6 and y>6 and y<9 and iko2 == "Wolne" then
+ local ikon2 = fs.open("/os/iko/.ico2", "w")
+ ikon2.writeLine(sciezka)
+ ikon2.close()
+end
+if x>6 and x<8 and y>6 and y<9 and iko3 == "Wolne" then
+ local ikon3 = fs.open("/os/iko/.ico3", "w")
+ ikon3.writeLine(sciezka)
+ ikon3.close()
+end
+if x>9 and x<12 and y>6 and y<9 and iko4 == "Wolne" then
+ local ikon4 = fs.open("/os/iko/.ico4", "w")
+ ikon4.writeLine(sciezka)
+ ikon4.close()
+end
+if x>12 and x<15 and y>6 and y<9 and iko5 == "Wolne" then
+ local ikon5 = fs.open("/os/iko/.ico5", "w")
+ ikon5.writeLine(sciezka)
+ ikon5.close()
+end
+if x>15 and x<18 and y>6 and y<9 and iko6 == "Wolne" then
+ local ikon6 = fs.open("/os/iko/.ico6", "w")
+ ikon6.writeLine(sciezka)
+ ikon6.close()
+end
+if x>18 and x<21 and y>6 and y<9 and iko7 == "Wolne" then
+ local ikon7 = fs.open("/os/iko/.ico7", "w")
+ ikon7.writeLine(sciezka)
+ ikon7.close()
+end
+if x>21 and x<24 and y>6 and y<9 and iko8 == "Wolne" then
+ local ikon8 = fs.open("/os/iko/.ico8", "w")
+ ikon8.writeLine(sciezka)
+ ikon8.close()
+end
+end
+ 
+ 
+function pulpit()
+local obraz = pul("/os/.pulpit")
+pud(obraz, 1, 1)
+kolor()
+pol()
+pfb(1, 19, 51, 19, colors.blue)
+pdp(51, 19, colors.orange)
+pdp(50, 19, colors.red)
+scp(1,19)
+stc(colors.white)
+if colr == "colors.orange" then sbc(colors.orange) elseif colr == "colors.magneta" then sbc(colors.magneta) elseif colr == "colors.lightBlue" then sbc(colors.lightBlue) elseif colr == "colors.yellow" then sbc(colors.yellow) elseif colr == "colors.lime" then sbc(colors.lime) elseif colr == "colors.pink" then sbc(colors.pink) elseif colr == "colors.gray" then sbc(colors.gray) elseif colr == "colors.lightGray" then sbc(colors.lightGray) elseif colr == "colors.purple" then sbc(colors.purple) elseif colr == "colors.blue" then sbc(colors.blue) elseif colr == "colors.brown" then sbc(colors.brown) elseif colr == "colors.green" then sbc(colors.green) elseif colr == "colors.red" then sbc(colors.red) elseif colr == "colors.black" then sbc(colors.black) elseif colr == "colors.white" then sbc(colors.white) stc(colors.black) end
+w("Start")
+if colr == "colors.orange" then sbc(colors.orange) elseif colr == "colors.magneta" then sbc(colors.magneta) elseif colr == "colors.lightBlue" then sbc(colors.lightBlue) elseif colr == "colors.yellow" then sbc(colors.yellow) elseif colr == "colors.lime" then sbc(colors.lime) elseif colr == "colors.pink" then sbc(colors.pink) elseif colr == "colors.gray" then sbc(colors.gray) elseif colr == "colors.lightGray" then sbc(colors.lightGray) elseif colr == "colors.purple" then sbc(colors.purple) elseif colr == "colors.blue" then sbc(colors.blue) elseif colr == "colors.brown" then sbc(colors.brown) elseif colr == "colors.green" then sbc(colors.green) elseif colr == "colors.red" then sbc(colors.red) elseif colr == "colors.black" then sbc(colors.black) elseif colr == "colors.white" then sbc(colors.white) stc(colors.black) end
+scp(1,1)
+p("NextUI 1.75  2nd UI Update. Microcraft             ")
+scp(41,19)
+w("nextStore")
+-- scp(20,19) --
+-- w("Aplikacje") --
+scp(5,18)
+sbc(colors.cyan)
+p("Aplikacje nextStore")
+pfb(5, 15, 7, 17, colors.blue)
+pdp(5, 15, colors.lightBlue)
+pdp(7, 17, colors.green)
+if fs.exists("/os/iko/.ico1") then
+ local i1 = fs.open("/os/iko/.ico1", "r")
+ ii1 = i1.readLine(1)
+ i1.close()
+ pfb(44, 2, 46, 3, colors.purple)
+end
+if fs.exists("/os/iko/.ico2") then
+ local i2 = fs.open("/os/iko/.ico2", "r")
+ ii2 = i2.readLine(1)
+ i2.close()
+ pfb(44, 5, 46, 6, colors.orange)
+end
+if fs.exists("/os/iko/.ico3") then
+ local i3 = fs.open("/os/iko/.ico3", "r")
+ ii3 = i3.readLine(1)
+ i3.close()
+ pfb(44, 8, 46, 9, colors.red)
+end
+if fs.exists("/os/iko/.ico4") then
+ local i4 = fs.open("/os/iko/.ico4", "r")
+ ii1 = i4.readLine(1)
+ i4.close()
+ pfb(44, 11, 46, 12, colors.yellow)
+end
+if fs.exists("/os/iko/.ico5") then
+ local i5 = fs.open("/os/iko/.ico5", "r")
+ ii5 = i5.readLine(1)
+ i5.close()
+ pfb(49, 2, 51, 3, colors.green)
+end
+if fs.exists("/os/iko/.ico6") then
+ local i6 = fs.open("/os/iko/.ico6", "r")
+ ii6 = i6.readLine(1)
+ i6.close()
+ pfb(49, 5, 51, 6, colors.lime)
+end
+if fs.exists("/os/iko/.ico7") then
+ local i7 = fs.open("/os/iko/.ico7", "r")
+ ii7 = i7.readLine(1)
+ i7.close()
+ pfb(49, 8, 51, 9, colors.lightBlue)
+end
+if fs.exists("/os/iko/.ico8") then
+ local i8 = fs.open("/os/iko/.ico8", "r")
+ ii8 = i8.readLine(1)
+ i8.close()
+ pfb(49, 11, 51, 12, colors.blue)
+end
+end
+ 
+ 
+function start()
+pfb(1, 11, 20, 18, colors.white)
+scp(1,10)
+stc(colors.white)
+if colr == "colors.orange" then sbc(colors.orange) elseif colr == "colors.magneta" then sbc(colors.magneta) elseif colr == "colors.lightBlue" then sbc(colors.lightBlue) elseif colr == "colors.yellow" then sbc(colors.yellow) elseif colr == "colors.lime" then sbc(colors.lime) elseif colr == "colors.pink" then sbc(colors.pink) elseif colr == "colors.gray" then sbc(colors.gray) elseif colr == "colors.lightGray" then sbc(colors.lightGray) elseif colr == "colors.purple" then sbc(colors.purple) elseif colr == "colors.blue" then sbc(colors.blue) elseif colr == "colors.brown" then sbc(colors.brown) elseif colr == "colors.green" then sbc(colors.green) elseif colr == "colors.red" then sbc(colors.red) elseif colr == "colors.black" then sbc(colors.white) stc(colors.black) elseif colr == "colors.white" then sbc(colors.white) stc(colors.black) end
+p("NextUI Start        ")
+scp(1,11)
+if colr == "colors.black" then sbc(colors.black) stc(colors.white) elseif colr == "colors.white" then sbc(colors.black) stc(colors.white) else sbc(colors.white) stc(colors.black) end
+p("Zainstaluj z dysku  ")
+p("Paint               ")
+p("2048                ")
+p("Snake               ")
+p("Edytor              ")
+p("Powrot do CraftOS   ")
+p("Ustawienia          ")
+p("Ikony pulpitu       ")
+local event, click, x, y = os.pullEvent("mouse_click")
+if x>0 and x<21 and y == 11 then dysk() end
+if x>0 and x<21 and y == 18 then ikony() end
+if x>0 and x<21 and y == 16 then error() end
+if x>0 and x<21 and y == 14 then sbc(colors.black) r("worm") end
+if x>0 and x<21 and y == 12 then r("/os/.paint") end
+if x>0 and x<21 and y == 17 then nust() end
+if x>0 and x<21 and y == 13 then r("/os/.2048") end
+if x>0 and x<21 and y == 15 then r("/os/.luaide") end
+if x == 20 and y == 10 then system() end
+end
+ 
+function mysz()
+local event, click, x, y = os.pullEvent("mouse_click")
+-- if x>20 and x<38 and y == 19 then apps() end
+if x == 50 and y == 19 then su() end
+if x == 51 and y == 19 then re() end
+if x>43 and x<47 and y>1 and y<4 and fs.exists("/os/iko/.ico1") then r(ii1) end
+if x>43 and x<47 and y>4 and y<7 and fs.exists("/os/iko/.ico2") then r(ii2) end
+if x>43 and x<47 and y>7 and y<10 and fs.exists("/os/iko/.ico3") then r(ii3) end
+if x>43 and x<47 and y>10 and y<13 and fs.exists("/os/iko/.ico4") then r(ii4) end
+if x>47 and x<52 and y>1 and y<4 and fs.exists("/os/iko/.ico5") then r(ii5) end
+if x>43 and x<47 and y>4 and y<7 and fs.exists("/os/iko/.ico6") then r(ii6) end
+if x>43 and x<47 and y>7 and y<10 and fs.exists("/os/iko/.ico7") then r(ii7) end
+if x>43 and x<47 and y>10 and y<13 and fs.exists("/os/iko/.ico8") then r(ii8) end
+if x>39 and x<49 and y == 19 then shop() end
+if x>0 and x<6 and y == 19 then start() end
+if fs.exists("/nshop/.exp") and x>4 and x<8 and y>14 and y<19 then folder() end
+end
+ 
+function nust()
+while true do
+if colr == "colors.orange" then sbc(colors.orange) elseif colr == "colors.magneta" then sbc(colors.magneta) elseif colr == "colors.lightBlue" then sbc(colors.lightBlue) elseif colr == "colors.yellow" then sbc(colors.yellow) elseif colr == "colors.lime" then sbc(colors.lime) elseif colr == "colors.pink" then sbc(colors.pink) elseif colr == "colors.gray" then sbc(colors.gray) elseif colr == "colors.lightGray" then sbc(colors.lightGray) elseif colr == "colors.purple" then sbc(colors.purple) elseif colr == "colors.blue" then sbc(colors.blue) elseif colr == "colors.brown" then sbc(colors.brown) elseif colr == "colors.green" then sbc(colors.green) elseif colr == "colors.red" then sbc(colors.red) elseif colr == "colors.black" then sbc(colors.black) stc(colors.white) elseif colr == "colors.white" then sbc(colors.white) stc(colors.black) end
+tc()
+if colr == "colors.orange" then sbc(colors.orange) elseif colr == "colors.magneta" then sbc(colors.magneta) elseif colr == "colors.lightBlue" then sbc(colors.lightBlue) elseif colr == "colors.yellow" then sbc(colors.yellow) elseif colr == "colors.lime" then sbc(colors.lime) elseif colr == "colors.pink" then sbc(colors.pink) elseif colr == "colors.gray" then sbc(colors.gray) elseif colr == "colors.lightGray" then sbc(colors.lightGray) elseif colr == "colors.purple" then sbc(colors.purple) elseif colr == "colors.blue" then sbc(colors.blue) elseif colr == "colors.brown" then sbc(colors.brown) elseif colr == "colors.green" then sbc(colors.green) elseif colr == "colors.red" then sbc(colors.red) elseif colr == "colors.black" then sbc(colors.black) stc(colors.white) elseif colr == "colors.white" then sbc(colors.white) stc(colors.black) end
+pfb(1, 19, 51, 19, colors.blue)
+scp(1,19)
+sbc(colors.green)
+stc(colors.white)
+w("Start")
+pdp(50,19, colors.red)
+pdp(51,19, colors.orange)
+pfb(1, 1, 51, 1, colors.blue)
+scp(1,1)
+p("Ustawienia NextUI")
+pdp(51,1, colors.red)
+pfb(3, 4, 13, 6, colors.orange)
+scp(3,5)
+stc(colors.white)
+p("Informacje")
+pfb(27, 4, 37, 6, colors.cyan)
+scp(27,5)
+stc(colors.white)
+p("Biurko")
+pfb(15, 4, 25, 6, colors.green)
+scp(15,5)
+stc(colors.white)
+p("Ustawienia")
+pfb(39, 4, 49, 6, colors.red)
+scp(39,5)
+stc(colors.white)
+p("Aplikacje")
+local event, click, x, y = os.pullEvent("mouse_click")
+if x == 51 and y == 1 then system() end
+if x>0 and x<6 and y == 19 then start() end
+if x>2 and x<14 and y>3 and y<7 then infust() end
+if x>14 and x<26 and y>3 and y<7 then setust() end
+if x>26 and x<38 and y>3 and y<7 then deskust() end
+if x>38 and x<50 and y>3 and y<7 then apps() end
+end
+end
+ 
+function infust()
+while true do
+kolor()
+if colr == "colors.orange" then sbc(colors.orange) elseif colr == "colors.magneta" then sbc(colors.magneta) elseif colr == "colors.lightBlue" then sbc(colors.lightBlue) elseif colr == "colors.yellow" then sbc(colors.yellow) elseif colr == "colors.lime" then sbc(colors.lime) elseif colr == "colors.pink" then sbc(colors.pink) elseif colr == "colors.gray" then sbc(colors.gray) elseif colr == "colors.lightGray" then sbc(colors.lightGray) elseif colr == "colors.purple" then sbc(colors.purple) elseif colr == "colors.blue" then sbc(colors.blue) elseif colr == "colors.brown" then sbc(colors.brown) elseif colr == "colors.green" then sbc(colors.green) elseif colr == "colors.red" then sbc(colors.red) elseif colr == "colors.black" then sbc(colors.black) stc(colors.white) elseif colr == "colors.white" then sbc(colors.white) stc(colors.black) end
+tc()
+if colr == "colors.orange" then sbc(colors.orange) elseif colr == "colors.magneta" then sbc(colors.magneta) elseif colr == "colors.lightBlue" then sbc(colors.lightBlue) elseif colr == "colors.yellow" then sbc(colors.yellow) elseif colr == "colors.lime" then sbc(colors.lime) elseif colr == "colors.pink" then sbc(colors.pink) elseif colr == "colors.gray" then sbc(colors.gray) elseif colr == "colors.lightGray" then sbc(colors.lightGray) elseif colr == "colors.purple" then sbc(colors.purple) elseif colr == "colors.blue" then sbc(colors.blue) elseif colr == "colors.brown" then sbc(colors.brown) elseif colr == "colors.green" then sbc(colors.green) elseif colr == "colors.red" then sbc(colors.red) elseif colr == "colors.black" then sbc(colors.black) stc(colors.white) elseif colr == "colors.white" then sbc(colors.white) stc(colors.black) end
+pfb(1, 1, 51, 1, colors.blue)
+scp(1,1)
+stc(colors.white)
+p("Ustawienia NextUI")
+pdp(51,1, colors.red)
+if colr == "colors.orange" then sbc(colors.orange) elseif colr == "colors.magneta" then sbc(colors.magneta) elseif colr == "colors.lightBlue" then sbc(colors.lightBlue) elseif colr == "colors.yellow" then sbc(colors.yellow) elseif colr == "colors.lime" then sbc(colors.lime) elseif colr == "colors.pink" then sbc(colors.pink) elseif colr == "colors.gray" then sbc(colors.gray) elseif colr == "colors.lightGray" then sbc(colors.lightGray) elseif colr == "colors.purple" then sbc(colors.purple) elseif colr == "colors.blue" then sbc(colors.blue) elseif colr == "colors.brown" then sbc(colors.brown) elseif colr == "colors.green" then sbc(colors.green) elseif colr == "colors.red" then sbc(colors.red) elseif colr == "colors.black" then sbc(colors.black) stc(colors.white) elseif colr == "colors.white" then sbc(colors.white) stc(colors.black) end
+scp(1,2)
+p("Microcraft NextUI")
+p("Wersja systemu: 1.7 2nd UI Update")
+zajete = math.ceil(getSize("/")/1024)
+wolne = math.ceil(fs.getFreeSpace("/")/1024)
+p("Wolne miejsce na dysku:", wolne, "KB")
+p("Obecna nazwa komputera: ", os.getComputerLabel())
+if pass == "" then log = "nie" else log = "tak" end
+p("Logowanie wlaczone: ", log)
+local event, click, x, y = os.pullEvent("mouse_click")
+if x == 51 and y == 1 then nust() end
+end
+end
+ 
+function deskust()
+while true do
+kolor()
+if colr == "colors.orange" then sbc(colors.orange) elseif colr == "colors.magneta" then sbc(colors.magneta) elseif colr == "colors.lightBlue" then sbc(colors.lightBlue) elseif colr == "colors.yellow" then sbc(colors.yellow) elseif colr == "colors.lime" then sbc(colors.lime) elseif colr == "colors.pink" then sbc(colors.pink) elseif colr == "colors.gray" then sbc(colors.gray) elseif colr == "colors.lightGray" then sbc(colors.lightGray) elseif colr == "colors.purple" then sbc(colors.purple) elseif colr == "colors.blue" then sbc(colors.blue) elseif colr == "colors.brown" then sbc(colors.brown) elseif colr == "colors.green" then sbc(colors.green) elseif colr == "colors.red" then sbc(colors.red) elseif colr == "colors.black" then sbc(colors.black) stc(colors.white) elseif colr == "colors.white" then sbc(colors.white) stc(colors.black) end
+tc()
+if colr == "colors.orange" then sbc(colors.orange) elseif colr == "colors.magneta" then sbc(colors.magneta) elseif colr == "colors.lightBlue" then sbc(colors.lightBlue) elseif colr == "colors.yellow" then sbc(colors.yellow) elseif colr == "colors.lime" then sbc(colors.lime) elseif colr == "colors.pink" then sbc(colors.pink) elseif colr == "colors.gray" then sbc(colors.gray) elseif colr == "colors.lightGray" then sbc(colors.lightGray) elseif colr == "colors.purple" then sbc(colors.purple) elseif colr == "colors.blue" then sbc(colors.blue) elseif colr == "colors.brown" then sbc(colors.brown) elseif colr == "colors.green" then sbc(colors.green) elseif colr == "colors.red" then sbc(colors.red) elseif colr == "colors.black" then sbc(colors.black) stc(colors.white) elseif colr == "colors.white" then sbc(colors.white) stc(colors.black) end
+pfb(1, 1, 51, 1, colors.blue)
+scp(1,1)
+stc(colors.white)
+p("Ustawienia NextUI")
+pdp(51,1, colors.red)
+if colr == "colors.orange" then sbc(colors.orange) elseif colr == "colors.magneta" then sbc(colors.magneta) elseif colr == "colors.lightBlue" then sbc(colors.lightBlue) elseif colr == "colors.yellow" then sbc(colors.yellow) elseif colr == "colors.lime" then sbc(colors.lime) elseif colr == "colors.pink" then sbc(colors.pink) elseif colr == "colors.gray" then sbc(colors.gray) elseif colr == "colors.lightGray" then sbc(colors.lightGray) elseif colr == "colors.purple" then sbc(colors.purple) elseif colr == "colors.blue" then sbc(colors.blue) elseif colr == "colors.brown" then sbc(colors.brown) elseif colr == "colors.green" then sbc(colors.green) elseif colr == "colors.red" then sbc(colors.red) elseif colr == "colors.black" then sbc(colors.black) stc(colors.white) elseif colr == "colors.white" then sbc(colors.white) stc(colors.black) end
+ scp(1,2)
+ p("Styl graficzny: Domyslny NextUI")
+ p("Brak dostepnych stylow")
+ p("Wybierz kolor wiodacy")
+ scp(1,8)
+ p("Ustawienia tapety")
+ local event, click, x, y = os.pullEvent("mouse_click")
+ if x>0 and x<25 and y == 4 then kolorw() end
+ if x>0 and x<25 and y == 8 then tapetaust() end
+ if x == 51 and y == 1 then nust() end
+end
+end
+ 
+ 
+-- pastebin run JQvW06m6
+ 
+function setust()
+while true do
+kolor()
+if colr == "colors.orange" then sbc(colors.orange) elseif colr == "colors.magneta" then sbc(colors.magneta) elseif colr == "colors.lightBlue" then sbc(colors.lightBlue) elseif colr == "colors.yellow" then sbc(colors.yellow) elseif colr == "colors.lime" then sbc(colors.lime) elseif colr == "colors.pink" then sbc(colors.pink) elseif colr == "colors.gray" then sbc(colors.gray) elseif colr == "colors.lightGray" then sbc(colors.lightGray) elseif colr == "colors.purple" then sbc(colors.purple) elseif colr == "colors.blue" then sbc(colors.blue) elseif colr == "colors.brown" then sbc(colors.brown) elseif colr == "colors.green" then sbc(colors.green) elseif colr == "colors.red" then sbc(colors.red) elseif colr == "colors.black" then sbc(colors.black) stc(colors.white) elseif colr == "colors.white" then sbc(colors.white) stc(colors.black) end
+tc()
+if colr == "colors.orange" then sbc(colors.orange) elseif colr == "colors.magneta" then sbc(colors.magneta) elseif colr == "colors.lightBlue" then sbc(colors.lightBlue) elseif colr == "colors.yellow" then sbc(colors.yellow) elseif colr == "colors.lime" then sbc(colors.lime) elseif colr == "colors.pink" then sbc(colors.pink) elseif colr == "colors.gray" then sbc(colors.gray) elseif colr == "colors.lightGray" then sbc(colors.lightGray) elseif colr == "colors.purple" then sbc(colors.purple) elseif colr == "colors.blue" then sbc(colors.blue) elseif colr == "colors.brown" then sbc(colors.brown) elseif colr == "colors.green" then sbc(colors.green) elseif colr == "colors.red" then sbc(colors.red) elseif colr == "colors.black" then sbc(colors.black) stc(colors.white) elseif colr == "colors.white" then sbc(colors.white) stc(colors.black) end
+pfb(1, 1, 51, 1, colors.blue)
+scp(1,1)
+stc(colors.white)
+p("Ustawienia NextUI")
+pdp(51,1, colors.red)
+if colr == "colors.orange" then sbc(colors.orange) elseif colr == "colors.magneta" then sbc(colors.magneta) elseif colr == "colors.lightBlue" then sbc(colors.lightBlue) elseif colr == "colors.yellow" then sbc(colors.yellow) elseif colr == "colors.lime" then sbc(colors.lime) elseif colr == "colors.pink" then sbc(colors.pink) elseif colr == "colors.gray" then sbc(colors.gray) elseif colr == "colors.lightGray" then sbc(colors.lightGray) elseif colr == "colors.purple" then sbc(colors.purple) elseif colr == "colors.blue" then sbc(colors.blue) elseif colr == "colors.brown" then sbc(colors.brown) elseif colr == "colors.green" then sbc(colors.green) elseif colr == "colors.red" then sbc(colors.red) elseif colr == "colors.black" then sbc(colors.black) stc(colors.white) elseif colr == "colors.white" then sbc(colors.white) stc(colors.black) end
+p("Zmien nazwe komputera")
+p("Aktualizuj system")
+p("Wiersz polecen")
+p("Zmien jezyk")
+local event, click, x, y = os.pullEvent("mouse_click")
+if x>0 and x<20 and y == 2 then
+ scp(1,2)
+  w("Wpisz nowa nazwe: ")
+  nazwa = read()
+  os.setComputerLabel(nazwa)
+  setust()
+end
+if x>0 and x<20 and y == 3 then r("/os/.update") end
+if x>0 and x<20 and y == 4 then cmd() end
+if x>0 and x<20 and y == 5 then r("pastebin run JQvW06m6") end
+if x == 51 and y == 1 then nust() end
+end
+end
+function system()
+while true do
+kolor()
+pulpit()
+mysz()
+end
+end
+ 
+ 
+pierwszeu()
+ 
+logo()
+ 
+system()
