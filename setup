@@ -1,0 +1,27 @@
+local function s(...) return sleep(...) end
+local function aw(...) return write(...) end
+local function p(...) return print(...) end
+local function tw(...) return term.write(...) end
+local function scp(...) return term.setCursorPos(...) end
+local function sbc(...) return term.setBackgroundColor(...) end
+local function stc(...) return term.setTextColor(...) end
+local function tc(...) return term.clear(...) end
+local function tcl(...) return term.clearLine(...) end
+local function r(...) return shell.run(...) end
+local function sp(...) return textutils.slowPrint(...) end
+local function sw(...) return textutils.slowWrite(...) end
+local function fse(...) return fs.exists(...) end
+local function pul(...) return paintutils.loadImage(...) end
+local function pud(...) return paintutils.drawImage(...) end
+local function pfb(...) return paintutils.drawFilledBox(...) end
+local function su(...) return os.shutdown(...) end
+local function re(...) return os.reboot(...) end
+local function pdp(...) return paintutils.drawPixel(...) end
+term.setBackgroundColor(colors.black)
+term.clear()
+term.setBackgroundColor(colors.black)
+term.setCursorPos(1,1)
+term.setTextColor(colors.white)
+print("NextUI GitHub Alpha Installer")
+print("Please wait, installing NextUI 1.10 Alpha")
+r("wget https://raw.githubusercontent.com/wisniaxd/nextui/1.10/startup startup.lua")
